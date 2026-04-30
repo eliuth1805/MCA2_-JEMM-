@@ -31,3 +31,8 @@ plt.grid()
 
 # Mostrar gráfica
 plt.show()
+
+
+
+
+
