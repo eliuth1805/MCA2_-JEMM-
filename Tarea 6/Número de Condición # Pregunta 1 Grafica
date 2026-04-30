@@ -1,1 +1,33 @@
+# Actividad 6
+# Sección 2: Número de Condición
+# Pregunta 1: Graficar con Python cada sistema de ecuaciones
+# Sistema (c)
 
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Rango de valores para x
+x = np.linspace(-10, 10, 100)
+
+# Ecuaciones despejadas
+# x + 2y = 3  →  y = (3 - x)/2
+y1 = (3 - x) / 2
+
+# 2x + 4.0001y = 6.0001  →  y = (6.0001 - 2x)/4.0001
+y2 = (6.0001 - 2*x) / 4.0001
+
+# Graficar ambas ecuaciones
+plt.plot(x, y1, label='Ecuación 1: x + 2y = 3')
+plt.plot(x, y2, label='Ecuación 2: 2x + 4.0001y = 6.0001')
+
+# Etiquetas
+plt.xlabel('x')
+plt.ylabel('y')
+plt.title('Gráfica del sistema (c)')
+
+# Leyenda y cuadrícula
+plt.legend()
+plt.grid()
+
+# Mostrar gráfica
+plt.show()
