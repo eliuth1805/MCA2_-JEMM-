@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 """
 Obtención eigenvalores y eigenvectores  y matriz  P (de aigenvectores) 
 utilizando :
