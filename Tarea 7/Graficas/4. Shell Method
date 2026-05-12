@@ -1,0 +1,29 @@
+4. Shell Method
+y=x,        y=x^2
+
+
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+x = np.linspace(0, 1, 1000)
+
+y1 = x
+y2 = x**2
+
+plt.figure(figsize=(6,6))
+
+plt.plot(x, y1, label=r'$y=x$')
+plt.plot(x, y2, label=r'$y=x^2$')
+
+plt.fill_between(x, y2, y1, alpha=0.3)
+
+plt.xlabel('x')
+plt.ylabel('y')
+
+plt.title('Región para Shell Method')
+
+plt.legend()
+plt.grid(True)
+
+plt.show()
